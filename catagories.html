@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Quiz Categories</title>
+    <style>
+        html
+        {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color:beige;
+            background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=1060&t=st=1709643421~exp=1709644021~hmac=2da996dbc8839f65aef9ca230a71fef8009db9eb9d9c4e7cf8b0540765ddc986');
+            background-size: 100% 100%; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+        }
+
+
+        body {
+            flex-direction: column;
+            color: #333; /* Set text color */
+           
+        }
+
+        h2 {
+            margin: 10px;
+            color: #555; /* Set heading color */
+        }
+
+        button {
+            margin: 10px;
+            background: #3498db; /* Set background color for buttons */
+            border: 1px solid #2980b9; /* Add border to buttons */
+            padding: 10px 20px; /* Add padding to buttons */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            color: #fff; /* Set text color */
+            font-size: 16px; /* Set font size */
+            transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+        }
+
+        button:hover {
+            background: #000; /* Change background color on hover */
+            color: rgb(84, 203, 179); /* Change text color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Please select the categories for the quiz game.</h2>
+    <div>
+        <button type="button" onclick='location.href="math.html?category=math"'>Math Quiz</button>
+        <button type="button" onclick='location.href="general.html?category=general"'>General Quiz</button>
+        <button type="button" onclick='location.href="science.html?category=science"'>Science Quiz</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Game</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('C:\\Users\\SHREESHA012\\OneDrive\\Desktop\\OIP (1).jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 600px;
+  height:600px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+.question {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+.options label {
+  display: block;
+  margin-bottom: 5px;
+}
+.result {
+  font-weight: bold;
+  margin-top: 20px;
+}
+button {
+  background-color: limegreen;
+}
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: large;
+}
+</style>
+</head>
+<body>
+
+<div class="container" id="quizContainer">
+  <form name="frmContact" class="needs-validation " method="post" action="http://localhost/webtec/login.html">
+    <div class="question">
+      <label for="question1">What is the integral of x dx?</label><br>
+      <input type="radio" id="question1_1" name="question1" value="1">
+      <label for="question1_1">1</label><br>
+      <input type="radio" id="question1_2" name="question1" value="x^2">
+      <label for="question1_2">x^2</label><br>
+      <input type="radio" id="question1_3" name="question1" value="x">
+      <label for="question1_3">x</label><br>
+      <input type="radio" id="question1_4" name="question1" value="x^2/2">
+      <label for="question1_4">x^2/2</label><br>
+    </div>
+    
+    <div class="question">
+      <label for="question2">What is 2 + 2?</label><br>
+      <input type="radio" id="question2_1" name="question2" value="3">
+      <label for="question2_1">3</label><br>
+      <input type="radio" id="question2_2" name="question2" value="4">
+      <label for="question2_2">4</label><br>
+      <input type="radio" id="question2_3" name="question2" value="5">
+      <label for="question2_3">5</label><br>
+      <input type="radio" id="question2_4" name="question2" value="6">
+      <label for="question2_4">6</label><br>
+    </div>
+    
+    <div class="question">
+      <label for="question3">What is 2 + 3?</label><br>
+      <input type="radio" id="question3_1" name="question3" value="5">
+      <label for="question3_1">5</label><br>
+      <input type="radio" id="question3_2" name="question3" value="7">
+      <label for="question3_2">7</label><br>
+      <input type="radio" id="question3_3" name="question3" value="3">
+      <label for="question3_3">3</label><br>
+      <input type="radio" id="question3_4" name="question3" value="2">
+      <label for="question3_4">2</label><br>
+    </div>
+    
+    <div class="question">
+      <label for="question4">If x=100, y=10 and x+y=z/2 then find z?</label><br>
+      <input type="radio" id="question3" name="question4" value="210">
+      <label for="question4">210</label><br>
+      <input type="radio" id="question3" name="question4" value="220">
+      <label for="question4">220</label><br>
+      <input type="radio" id="question3" name="question4" value="410">
+      <label for="question4">410</label><br>
+      <input type="radio" id="question3" name="question4" value="110">
+      <label for="question4">110</label><br>
+  </div>
+
+  <div class="question">
+      <label for="question5">What is d(2x)/dx?</label><br>
+      <input type="radio" id="question3" name="question5" value="1">
+      <label for="question5">1</label><br>
+      <input type="radio" id="question3" name="question5" value="x">
+      <label for="question5">x</label><br>
+      <input type="radio" id="question3" name="question5" value="2">
+      <label for="question5">2</label><br>
+      <input type="radio" id="question3" name="question5" value="2x">
+      <label for="question5">2x</label><br>
+  </div>
+
+  <div class="question">
+      <label for="question6">What is the formula for calculating Arithmetic Progression ?</label><br>
+      <input type="radio" id="question3" name="question6" value="ano">
+      <label for="question6">a<sub>n</sub>=a+(n+1)*d</label><br>
+      <input type="radio" id="question3" name="question6" value="an">
+      <label for="question6">a<sub>n</sub>=a+(n-1)*d</label><br>
+      <input type="radio" id="question3" name="question6" value="a">
+      <label for="question6">a=a<sub>n</sub>*(n+1)*d</label><br>
+      <input type="radio" id="question3" name="question6" value="d">
+      <label for="question6">a<sub>n</sub>=a+(d-1)*n</label><br>
+  </div>
+
+  <div class="question">
+      <label for="question7">What is the value of pi?</label><br>
+      <input type="radio" id="question3" name="question7" value="3.14">
+      <label for="question7">3.141592</label><br>
+      <input type="radio" id="question3" name="question7" value="2.12">
+      <label for="question7">2.123465</label><br>
+      <input type="radio" id="question3" name="question7" value="5">
+      <label for="question7">5</label><br>
+      <input type="radio" id="question3" name="question7" value="12">
+      <label for="question7">12/3</label><br>
+  </div>
+
+  <div class="question">
+      <label for="question8">What is the formula of a sine function?</label><br>
+      <input type="radio" id="question3" name="question8" value="hyp">
+      <label for="question8">hypotenuse/opposite side</label><br>
+      <input type="radio" id="question3" name="question8" value="opp">
+      <label for="question8">opposite side/hypotenuse</label><br>
+      <input type="radio" id="question3" name="question8" value="hy">
+      <label for="question8">hypotenuse/hypotenuse</label><br>
+      <input type="radio" id="question3" name="question8" value="adj">
+      <label for="question8">adjacent side/opposite side</label><br>
+  </div>
+
+  <div class="question">
+      <label for="question9">How many sides does a circle have?</label><br>
+      <input type="radio" id="question3" name="question9" value="300">
+      <label for="question9">300</label><br>
+      <input type="radio" id="question3" name="question9" value="1">
+      <label for="question9">1</label><br>
+      <input type="radio" id="question3" name="question9" value="4">
+      <label for="question9">4</label><br>
+      <input type="radio" id="question3" name="question9" value="No">
+      <label for="question9">No side</label><br>
+  </div>
+
+  <div class="question">
+      <label for="question10">What is an Isoceles triangle?</label><br>
+      <input type="radio" id="question3" name="question10" value="2">
+      <label for="question10">2 sides are the same</label><br>
+      <input type="radio" id="question3" name="question10" value="noo">
+      <label for="question10">No sides are the same</label><br>
+      <input type="radio" id="question3" name="question10" value="all">
+      <label for="question10">All three sides are the same</label><br>
+      <input type="radio" id="question3" name="question10" value="none">
+      <label for="question10">Such a thing doesn't exist</label><br>
+  </div>
+  <button type="submit" onclick="checkAnswers()">Submit</button>
+</form>
+<div class="result"></div>
+</div>
+
+<script>
+function checkAnswers() {
+  //let username = document.getElementById('username').value;
+  let q1Answer = document.querySelector('input[name="question1"]:checked').value;
+  let q2Answer = document.querySelector('input[name="question2"]:checked').value;
+  let q3Answer = document.querySelector('input[name="question3"]:checked').value;
+  let q4Answer = document.querySelector('input[name="question4"]:checked').value;
+  let q5Answer = document.querySelector('input[name="question5"]:checked').value;
+  let q6Answer = document.querySelector('input[name="question6"]:checked').value;
+  let q7Answer = document.querySelector('input[name="question7"]:checked').value;
+  let q8Answer = document.querySelector('input[name="question8"]:checked').value;
+  let q9Answer = document.querySelector('input[name="question9"]:checked').value;
+  let q10Answer = document.querySelector('input[name="question10"]:checked').value;
+
+    let marks = 0,totalquestion=0;
+    if (q1Answer === 'x^2/2') marks++;totalquestion++;
+    if (q2Answer === '4') marks++;totalquestion++;
+    if (q3Answer === '5') marks++;totalquestion++;
+    if (q4Answer === "220") marks++;totalquestion++;
+    if (q5Answer === "2") marks++;totalquestion++;
+    if (q6Answer === "an") marks++;totalquestion++;
+    if (q7Answer === "3.14") marks++;totalquestion++;
+    if (q8Answer === "opp") marks++;totalquestion++;
+    if (q9Answer === "No") marks++;totalquestion++;
+    if (q10Answer === "2") marks++;totalquestion++;
+    let correct=marks;
+    let incorrect=totalquestion-marks;
+    sessionStorage.setItem('marks', marks);
+    sessionStorage.setItem('correct', correct);
+    sessionStorage.setItem('incorrect', incorrect);
+    //let result = `${username}, Your marks: ${marks}/${totalquestion}`;
+    //document.querySelector('.result').innerHTML = result;
+
+    }
+</script>
+
+</body>
+</html>

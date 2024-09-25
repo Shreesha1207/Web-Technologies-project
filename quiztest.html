@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Game</title>
+<style>
+        body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url('C:\\Users\\SHREESHA012\\OneDrive\\Desktop\\OIP (1).jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        width: 600px;
+        height:600px; /* Set a fixed height */
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #ccc;
+    }
+    .question {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #aaa;
+    }
+    .options label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .result {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    button {
+        background-color: limegreen;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: large;
+    }
+</style>
+</head>
+<body>
+
+<div class="container" id="quizContainer">
+  <form name="frmContact" class="needs-validation " method="post" action="http://localhost/webtec/logingeneral.html">
+    <div class="question">
+        <label for="question1">What is the capital of France?</label><br>
+        <input type="radio" id="question1" name="question1" value="London">
+        <label for="question1">London</label><br>
+        <input type="radio" id="question1" name="question1" value="Paris">
+        <label for="question1">Paris</label><br>
+        <input type="radio" id="question1" name="question1" value="Berlin">
+        <label for="question1">Berlin</label><br>
+        <input type="radio" id="question1" name="question1" value="Madrid">
+        <label for="question1">Madrid</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question2">Who won the UEFA Champions League in 2019?</label><br>
+        <input type="radio" id="question2" name="question2" value="RM">
+        <label for="question2">Real Madrid</label><br>
+        <input type="radio" id="question2" name="question2" value="Barca">
+        <label for="question2">Barcelona</label><br>
+        <input type="radio" id="question2" name="question2" value="Manu">
+        <label for="question2">Manchester United</label><br>
+        <input type="radio" id="question2" name="question2" value="Liv">
+        <label for="question2">Liverpool</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question3">Which is the biggest company in the world by market cap?</label><br>
+        <input type="radio" id="question3" name="question3" value="Microsoft">
+        <label for="question3">Microsoft</label><br>
+        <input type="radio" id="question3" name="question3" value="Apple">
+        <label for="question3">Apple</label><br>
+        <input type="radio" id="question3" name="question3" value="Google">
+        <label for="question3">Google/Alphabet</label><br>
+        <input type="radio" id="question3" name="question3" value="Aramco">
+        <label for="question3">Saudi Aramco</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question4">What is the biggest continent?</label><br>
+        <input type="radio" id="question3" name="question4" value="Antartica">
+        <label for="question4">Antartica</label><br>
+        <input type="radio" id="question3" name="question4" value="Asia">
+        <label for="question4">Asia</label><br>
+        <input type="radio" id="question3" name="question4" value="Europe">
+        <label for="question4">Europe</label><br>
+        <input type="radio" id="question3" name="question4" value="Africa">
+        <label for="question4">Africa</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question5">Which is the longest river in the world?</label><br>
+        <input type="radio" id="question3" name="question5" value="Amazon">
+        <label for="question5">Amazon</label><br>
+        <input type="radio" id="question3" name="question5" value="Ganga">
+        <label for="question5">Ganga</label><br>
+        <input type="radio" id="question3" name="question5" value="Nile">
+        <label for="question5">Nile</label><br>
+        <input type="radio" id="question3" name="question5" value="Yamuna">
+        <label for="question5">Yamuna</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question6">What is the National animal of India?</label><br>
+        <input type="radio" id="question3" name="question6" value="Dolphin">
+        <label for="question6">Dolphin</label><br>
+        <input type="radio" id="question3" name="question6" value="Parrot">
+        <label for="question6">Parrot</label><br>
+        <input type="radio" id="question3" name="question6" value="Tiger">
+        <label for="question6">Tiger</label><br>
+        <input type="radio" id="question3" name="question6" value="Lion">
+        <label for="question6">Lion</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question7">Which currency is used in India?</label><br>
+        <input type="radio" id="question3" name="question7" value="Rupees">
+        <label for="question7">Rupees</label><br>
+        <input type="radio" id="question3" name="question7" value="Ruble">
+        <label for="question7">Ruble</label><br>
+        <input type="radio" id="question3" name="question7" value="Euro">
+        <label for="question7">Euro</label><br>
+        <input type="radio" id="question3" name="question7" value="Yen">
+        <label for="question7">Yen</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question8">Who won the IPL in 2023?</label><br>
+        <input type="radio" id="question3" name="question8" value="tannaninare">
+        <label for="question8">RCB</label><br>
+        <input type="radio" id="question3" name="question8" value="MI">
+        <label for="question8">MI</label><br>
+        <input type="radio" id="question3" name="question8" value="CSK">
+        <label for="question8">CSK</label><br>
+        <input type="radio" id="question3" name="question8" value="LSG">
+        <label for="question8">LSG</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question9">Which is the world's largest city?</label><br>
+        <input type="radio" id="question3" name="question9" value="Bangalore">
+        <label for="question9">Bangalore</label><br>
+        <input type="radio" id="question3" name="question9" value="NY">
+        <label for="question9">New York</label><br>
+        <input type="radio" id="question3" name="question9" value="London">
+        <label for="question9">London</label><br>
+        <input type="radio" id="question3" name="question9" value="Tokyo">
+        <label for="question9">Tokyo</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question10">Which is the longest flight in the world by time?</label><br>
+        <input type="radio" id="question3" name="question10" value="blr_ber">
+        <label for="question10">Bangalore to Berlin</label><br>
+        <input type="radio" id="question3" name="question10" value="ny_sin">
+        <label for="question10">New York to Singapore</label><br>
+        <input type="radio" id="question3" name="question10" value="ldn_mel">
+        <label for="question10">London to Melbourne</label><br>
+        <input type="radio" id="question3" name="question10" value="msc_ndl">
+        <label for="question10">Moscow to Delhi</label><br>
+    </div>
+    <button type="submit" onclick="checkAnswers()">Submit</button>
+  </form>
+  <div class="result"></div>
+</div>
+
+<script>
+  function checkAnswers() {
+    //let username = document.getElementById('username').value;
+    let q1Answer = document.querySelector('input[name="question1"]:checked').value;
+    let q2Answer = document.querySelector('input[name="question2"]:checked').value;
+    let q3Answer = document.querySelector('input[name="question3"]:checked').value;
+    let q4Answer = document.querySelector('input[name="question4"]:checked').value;
+    let q5Answer = document.querySelector('input[name="question5"]:checked').value;
+    let q6Answer = document.querySelector('input[name="question6"]:checked').value;
+    let q7Answer = document.querySelector('input[name="question7"]:checked').value;
+    let q8Answer = document.querySelector('input[name="question8"]:checked').value;
+    let q9Answer = document.querySelector('input[name="question9"]:checked').value;
+    let q10Answer = document.querySelector('input[name="question10"]:checked').value;
+
+    let marks = 0,totalquestion=0;
+    if (q1Answer === "Paris") marks++;totalquestion++;
+    if (q2Answer === "Liv") marks++;totalquestion++;
+    if (q3Answer === "Microsoft") marks++;totalquestion++;
+    if (q4Answer === "Asia") marks++;totalquestion++;
+    if (q5Answer === "Nile") marks++;totalquestion++;
+    if (q6Answer === "Tiger") marks++;totalquestion++;
+    if (q7Answer === "Rupees") marks++;totalquestion++;
+    if (q8Answer === "CSK") marks++;totalquestion++;
+    if (q9Answer === "Tokyo") marks++;totalquestion++;
+    if (q10Answer === "ny_sin") marks++;totalquestion++;
+    let correct=marks;
+    let incorrect=totalquestion-marks;
+    sessionStorage.setItem('marks', marks);
+    sessionStorage.setItem('correct', correct);
+    sessionStorage.setItem('incorrect', incorrect);
+    //let result = `${username}, Your marks: ${marks}/${totalquestion}`;
+    document.querySelector('.result').innerHTML = result;
+
+    }
+</script>
+
+</body>
+</html>

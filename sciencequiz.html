@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url('C://xampp//htdocs//webtec//OIP (1).jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        width: 600px;
+        height:600px; /* Set a fixed height */
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #ccc;
+    }
+    .question {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #aaa;
+    }
+    .options label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .result {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    button {
+        background-color: limegreen;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: large;
+    }
+</style>
+
+
+</head> 
+<body>
+    
+<div class="container" id="quizContainer">
+  <form name="frmContact" class="needs-validation " method="post" action="http://localhost/webtec/loginscience.html">
+    <div class="question">
+        <label for="question1" required>Who discovered gravity?</label><br>
+        <input type="radio" id="question1_option1" name="question1" value="Kohli">
+        <label for="question1_option1">Kohli</label><br>
+        <input type="radio" id="question1_option2" name="question1" value="Einstein">
+        <label for="question1_option2">Einstein</label><br>
+        <input type="radio" id="question1_option3" name="question1" value="Newton">
+        <label for="question1_option3">Newton</label><br>
+        <input type="radio" id="question1_option4" name="question1" value="Mendeleev">
+        <label for="question1_option4">Mendeleev</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question2" required>Which is the biggest animal on earth?</label><br>
+        <input type="radio" id="question2_option1" name="question2" value="Whale">
+        <label for="question2_option1">Whale</label><br>
+        <input type="radio" id="question2_option2" name="question2" value="Tiger">
+        <label for="question2_option2">Tiger</label><br>
+        <input type="radio" id="question2_option3" name="question2" value="Lion">
+        <label for="question2_option3">Lion</label><br>
+        <input type="radio" id="question2_option4" name="question2" value="Rat">
+        <label for="question2_option4">Rat</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question3" required>Which planet is known as the Red Planet?</label><br>
+        <input type="radio" id="question3_option1" name="question3" value="Mars">
+        <label for="question3_option1">Mars</label><br>
+        <input type="radio" id="question3_option2" name="question3" value="Venus">
+        <label for="question3_option2">Venus</label><br>
+        <input type="radio" id="question3_option3" name="question3" value="Jupiter">
+        <label for="question3_option3">Jupiter</label><br>
+        <input type="radio" id="question3_option4" name="question3" value="Saturn">
+        <label for="question3_option4">Saturn</label><br>
+    </div>
+    <div class="question">
+        <label for="question4">The water cycle describes the continuous movement of water on, above, and below the Earth's surface. Which of the following is NOT part of the water cycle?</label><br>
+        <input type="radio" id="question1_a" name="question4" value="Evaporation">
+        <label for="question1_a">Evaporation</label><br>
+        <input type="radio" id="question1_b" name="question4" value="Condensation">
+        <label for="question1_b">Condensation</label><br>
+        <input type="radio" id="question1_c" name="question4" value="Precipitation">
+        <label for="question1_c">Precipitation</label><br>
+        <input type="radio" id="question1_d" name="question4" value="Photosynthesis">
+        <label for="question1_d">Photosynthesis</label><br>
+    </div>
+    <div class="question">
+        <label for="question5">Which of the following is the smallest unit of living matter?</label><br>
+        <input type="radio" id="question2_a" name="question5" value="Organ">
+        <label for="question2_a">Organ</label><br>
+        <input type="radio" id="question2_b" name="question5" value="Tissue">
+        <label for="question2_b">Tissue</label><br>
+        <input type="radio" id="question2_c" name="question5" value="Cell">
+        <label for="question2_c">Cell</label><br>
+        <input type="radio" id="question2_d" name="question5" value="System">
+        <label for="question2_d">System</label><br>
+    </div>
+    <div class="question">
+        <label for="question6">What is the force that pulls objects towards the Earth?</label><br>
+        <input type="radio" id="question3_a" name="question6" value="Friction">
+        <label for="question3_a">Friction</label><br>
+        <input type="radio" id="question3_b" name="question6" value="Magnetism">
+        <label for="question3_b">Magnetism</label><br>
+        <input type="radio" id="question3_c" name="question6" value="Gravity">
+        <label for="question3_c">Gravity</label><br>
+        <input type="radio" id="question3_d" name="question6" value="Buoyancy">
+        <label for="question3_d">Buoyancy</label><br>
+    </div>
+    <div class="question">
+        <label for="question7">Which of the following materials is an insulator, meaning it does not conduct electricity well?</label><br>
+        <input type="radio" id="question4_a" name="question7" value="Metal">
+        <label for="question4_a">Metal</label><br>
+        <input type="radio" id="question4_b" name="question7" value="Acid">
+        <label for="question4_b">Acid</label><br>
+        <input type="radio" id="question4_c" name="question7" value="Wood">
+        <label for="question4_c">Wood</label><br>
+        <input type="radio" id="question4_d" name="question7" value="Water">
+        <label for="question4_d">Water</label><br>
+    </div>
+    <div class="question">
+        <label for="question8">What is the process by which plants use sunlight, water, and carbon dioxide to produce food?</label><br>
+        <input type="radio" id="question5_a" name="question8" value="Respiration">
+        <label for="question5_a">Respiration</label><br>
+        <input type="radio" id="question5_b" name="question8" value="Photosynthesis">
+        <label for="question5_b">Photosynthesis</label><br>
+        <input type="radio" id="question5_c" name="question8" value="Digestion">
+        <label for="question5_c">Digestion</label><br>
+        <input type="radio" id="question5_d" name="question8" value="Excretion">
+        <label for="question5_d">Excretion</label><br>
+    </div>
+    <div class="question">
+        <label for="question9">Which of the following is the layer of the atmosphere closest to Earth's surface?</label><br>
+        <input type="radio" id="question6_a" name="question9" value="Thermosphere">
+        <label for="question6_a">Thermosphere</label><br>
+        <input type="radio" id="question6_b" name="question9" value="Mesosphere">
+        <label for="question6_b">Mesosphere</label><br>
+        <input type="radio" id="question6_c" name="question9" value="Stratosphere">
+        <label for="question6_c">Stratosphere</label><br>
+        <input type="radio" id="question6_d" name="question9" value="Troposphere">
+        <label for="question6_d">Troposphere</label><br>
+    </div>
+    <div class="question">
+        <label for="question10">What is the process of changing from a liquid to a gas called?</label><br>
+        <input type="radio" id="question7_a" name="question10" value="Condensation">
+        <label for="question7_a">Condensation</label><br>
+        <input type="radio" id="question7_b" name="question10" value="Evaporation">
+        <label for="question7_b">Evaporation</label><br>
+        <input type="radio" id="question7_c" name="question10" value="Watering">
+        <label for="question7_c">Watering</label><br>
+        <input type="radio" id="question7_d" name="question10" value="Freezing">
+        <label for="question7_d">Freezing</label><br>
+    </div>
+    <button type="submit" onclick="checkAnswers()">Submit</button>
+  </form>
+  <div class="result"></div>
+</div>
+
+<script>
+  function checkAnswers() {
+    //let username = document.getElementById('username').value;
+    let q1Answer = document.querySelector('input[name="question1"]:checked').value;
+    let q2Answer = document.querySelector('input[name="question2"]:checked').value;
+    let q3Answer = document.querySelector('input[name="question3"]:checked').value;
+    let q4Answer = document.querySelector('input[name="question4"]:checked').value;
+    let q5Answer = document.querySelector('input[name="question5"]:checked').value;
+    let q6Answer = document.querySelector('input[name="question6"]:checked').value;
+    let q7Answer = document.querySelector('input[name="question7"]:checked').value;
+    let q8Answer = document.querySelector('input[name="question8"]:checked').value;
+    let q9Answer = document.querySelector('input[name="question9"]:checked').value;
+    let q10Answer = document.querySelector('input[name="question10"]:checked').value;
+   // let q3Answer = document.querySelector('input[name="question3"]:checked').value;
+    let marks = 0,totalquestion=0;
+    if (q1Answer === "Newton") marks++;totalquestion++;
+    if (q2Answer === "Whale") marks++;totalquestion++;
+    if (q3Answer === "Mars") marks++;totalquestion++;
+    if (q4Answer === "Photosynthesis") marks++;totalquestion++;
+    if (q5Answer === "Cell") marks++;totalquestion++;
+    if (q6Answer === "Gravity") marks++;totalquestion++;
+    if (q7Answer === "Wood") marks++;totalquestion++;
+    if (q8Answer === "Photosynthesis") marks++;totalquestion++;
+    if (q9Answer === "Troposphere") marks++;totalquestion++;
+    if (q10Answer === "Evaporation") marks++;totalquestion++;
+
+    let correct=marks;
+    let incorrect=totalquestion-marks;
+    sessionStorage.setItem('marks', marks);
+    sessionStorage.setItem('correct', correct);
+    sessionStorage.setItem('incorrect', incorrect);
+    //let result = `${username}, Your marks: ${marks}/${totalquestion}`;
+    //document.querySelector('.result').innerHTML = result;
+
+    }
+</script>
+
+</body>
+</html>

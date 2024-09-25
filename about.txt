@@ -1,0 +1,3 @@
+This is a simple quiz gamebased on JS,HTML and PHP
+Needs PHPmyadmin to run it
+general.html is the first html page
